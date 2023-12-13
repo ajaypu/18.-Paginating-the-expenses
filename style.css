@@ -1,0 +1,21 @@
+.lab {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+input {
+  font-size: 25px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.form-div {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+  background-color: #efefef;
+  border: 1px solid rgb(16, 0, 0);
+  border-radius: 10px;
+  height: 350px;
+}

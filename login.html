@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .lab {
+        display: block;
+        font-size: 25px;
+        margin-bottom: 5px;
+      }
+
+      input {
+        font-size: 25px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      .form {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        margin: auto;
+        background-color: #efefef;
+        border: 1px solid rgb(16, 0, 0);
+        border-radius: 10px;
+        height: 310px;
+      }
+      .reset {
+        float: right;
+        font-size: 25px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <form id="form">
+          <div class="form-login">
+            <div>
+              <label class="lab" for="email">Enter your email</label>
+              <input type="text" id="email" name="email" required />
+            </div>
+            <div>
+              <label class="lab" for="password">Enter your password</label>
+              <input type="text" id="password" name="password" required />
+            </div>
+            <div>
+              <input type="submit" value="Login" />
+              <button class="reset" onclick="forgotPassword(event)">
+                forgot password
+              </button>
+            </div>
+          </div>
+          <div>
+            <a href="./signup.html" class="lab">New User: Signup Now</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
